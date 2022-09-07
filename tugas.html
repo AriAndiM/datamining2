@@ -344,7 +344,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-6c96cea9-ccbb-432b-8e5c-944f7ceb467b">
+  <div id="df-3f75d164-f222-4f47-be4e-c01b92ea2ef5">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -476,7 +476,7 @@ title="Print to PDF"
 </table>
 <p>1461 rows × 6 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-6c96cea9-ccbb-432b-8e5c-944f7ceb467b')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-3f75d164-f222-4f47-be4e-c01b92ea2ef5')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -527,12 +527,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-6c96cea9-ccbb-432b-8e5c-944f7ceb467b button.colab-df-convert');
+          document.querySelector('#df-3f75d164-f222-4f47-be4e-c01b92ea2ef5 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-6c96cea9-ccbb-432b-8e5c-944f7ceb467b');
+          const element = document.querySelector('#df-3f75d164-f222-4f47-be4e-c01b92ea2ef5');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -553,6 +553,130 @@ title="Print to PDF"
   </div>
 </div></div>
 </div>
+<p>Kolom yang datanya bertipe data numerik</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">angin</span> <span class="o">=</span> <span class="n">data</span> <span class="p">[</span><span class="s1">&#39;wind&#39;</span><span class="p">]</span>
+<span class="n">angin</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0       4.7
+1       4.5
+2       2.3
+3       4.7
+4       6.1
+       ... 
+1456    2.9
+1457    1.3
+1458    2.6
+1459    3.4
+1460    3.5
+Name: wind, Length: 1461, dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<p>##2. Mencari rata-rata,nilai tengah,dan nilai paling sering muncul</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">statistics</span> <span class="k">as</span> <span class="nn">st</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>2.1 Mean (nilai rata-rata)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">st</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">angin</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.24113620807666
+</pre></div>
+</div>
+</div>
+</div>
+<p>2.2 Median (nilai tengah)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">st</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">angin</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.0
+</pre></div>
+</div>
+</div>
+</div>
+<p>2.3 Modus (Nilai paling sering muncul)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">st</span><span class="o">.</span><span class="n">mode</span><span class="p">(</span><span class="n">angin</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2.6
+</pre></div>
+</div>
+</div>
+</div>
+<p>#3. Kemiringan / Skewned</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">angin</span><span class="o">.</span><span class="n">skew</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.8916675191285183
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">distplot</span><span class="p">(</span><span class="n">angin</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
+  warnings.warn(msg, FutureWarning)
+</pre></div>
+</div>
+<img alt="_images/tugas_16_1.png" src="_images/tugas_16_1.png" />
+</div>
+</div>
+<p>#TUGAS 2 DISKRITISASI</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#url datasets</span>
+<span class="n">url</span><span class="o">=</span><span class="s1">&#39;https://raw.githubusercontent.com/vega/vega/main/docs/data/seattle-weather.csv&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>##1. Equal-width
+Equal width adalah <br></p>
+<p>##2. Equal frekuensi interval
+Equal frekuensi interval adalah <br>
+Rumus Equal frekuensi interval</p>
+<p>##3. Entropi</p>
 </section>
 
     <script type="text/x-thebe-config">

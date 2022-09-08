@@ -348,6 +348,33 @@ title="Print to PDF"
      2. Mencari mean,median,dan modus
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#kemiringan-skewned">
+     3. Kemiringan / Skewned
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#diskritisasi">
+   DISKRITISASI
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tugas-2">
+   TUGAS 2
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#equal-width">
+     1. Equal-width
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#equal-frekuensi-interval">
+     2. Equal frekuensi interval
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -389,6 +416,33 @@ title="Print to PDF"
      2. Mencari mean,median,dan modus
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#kemiringan-skewned">
+     3. Kemiringan / Skewned
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#diskritisasi">
+   DISKRITISASI
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tugas-2">
+   TUGAS 2
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#equal-width">
+     1. Equal-width
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#equal-frekuensi-interval">
+     2. Equal frekuensi interval
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -423,7 +477,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-06e5b4c3-111e-41c1-9b91-3ff66bf62f18">
+  <div id="df-89b3da86-7db3-4104-ad36-1f9efdf5d03c">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -555,7 +609,7 @@ title="Print to PDF"
 </table>
 <p>1461 rows × 6 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-06e5b4c3-111e-41c1-9b91-3ff66bf62f18')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-89b3da86-7db3-4104-ad36-1f9efdf5d03c')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -606,12 +660,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-06e5b4c3-111e-41c1-9b91-3ff66bf62f18 button.colab-df-convert');
+          document.querySelector('#df-89b3da86-7db3-4104-ad36-1f9efdf5d03c button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-06e5b4c3-111e-41c1-9b91-3ff66bf62f18');
+          const element = document.querySelector('#df-89b3da86-7db3-4104-ad36-1f9efdf5d03c');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -669,6 +723,11 @@ Name: wind, Length: 1461, dtype: float64
 </div>
 <p>2.1 Mean (nilai rata-rata)</p>
 <p><em>Mean yaitu nilai rata-rata dari data</em></p>
+<ul class="simple">
+<li><p>Rumus Mean :</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[Mean= \frac{x_{1}+x_{2}+x_{3}+...+x_{n}}{n}\]</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">st</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">angin</span><span class="p">)</span>
@@ -683,6 +742,14 @@ Name: wind, Length: 1461, dtype: float64
 </div>
 <p>2.2 Median (nilai tengah)</p>
 <p><em>Median yaitu nilai tengah dari data</em></p>
+<ul>
+<li><p>Rumus Median</p>
+<p>Jika jumlah data ganjil :
+$<span class="math notranslate nohighlight">\(M_{e}=\frac{X(n+1)}{2}\)</span><span class="math notranslate nohighlight">\(
+jika jumlah data genap :
+\)</span><span class="math notranslate nohighlight">\(M_{e}=\frac{X_{\frac{n}{2}}+X(_{\frac{n}{2}+1})}{2}\)</span>$</p>
+</li>
+</ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">st</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">angin</span><span class="p">)</span>
@@ -697,6 +764,9 @@ Name: wind, Length: 1461, dtype: float64
 </div>
 <p>2.3 Modus (Nilai paling sering muncul)</p>
 <p><em>Modus yaitu nilai yang paling sering muncul pada data</em></p>
+<ul class="simple">
+<li><p>Rumus Modus :</p></li>
+</ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">st</span><span class="o">.</span><span class="n">mode</span><span class="p">(</span><span class="n">angin</span><span class="p">)</span>
@@ -709,7 +779,12 @@ Name: wind, Length: 1461, dtype: float64
 </div>
 </div>
 </div>
-<p>#3. Kemiringan / Skewned</p>
+</section>
+<section id="kemiringan-skewned">
+<h3>3. Kemiringan / Skewned<a class="headerlink" href="#kemiringan-skewned" title="Permalink to this headline">#</a></h3>
+<blockquote>
+<div><p><em>Kemencengan atau kecondongan (skewness) adalah tingkat ketidaksimetrisan atau kejauhan simetri dari sebuah distribusi. Skewness diartikan sebagai kemiringan distribusi data. Sebuah distribusi yang tidak simetris akan memiliki rata-rata, median, dan modus yang tidak sama besarnya sehingga distribusi akan terkonsentrasi pada salah satu sisi dan kurvanya akan menceng. Ukuran kemiringan kurva adalah derajat atau ukuran dari ketidaksimetrian suatu distribusi data. Nilai skewness (ukuran kemiringan) menunjukkan data normal ketika nilai-nilai tersebut berada di antara rentang nilai -2 sampai dengan 2. Kurva positif apabila rata-rata hitung &gt; modus/median. Kurva negative apabila rata-rata hitung &lt; modus/media. Jika distribusi memiliki ekor yang lebih panjang ke kanan daripada yang ke kiri maka distribusi disebut menceng ke kanan atau memiliki kemencengan positif. Sebaliknya, jika distribusi memiliki ekor yang lebih panjang ke kiri daripada yang ke kanan maka distribusi disebut menceng ke kiri atau memiliki kemencengan negatif. Berikut ini gambar kurva dari distribusi yang menceng ke kanan (menceng positif) dan menceng ke kiri (menceng negatif) (Ghozali, 2016).</em></p>
+</div></blockquote>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">angin</span><span class="o">.</span><span class="n">skew</span><span class="p">()</span>
@@ -746,7 +821,11 @@ Name: wind, Length: 1461, dtype: float64
 <img alt="_images/tugas_16_1.png" src="_images/tugas_16_1.png" />
 </div>
 </div>
-<p>#TUGAS 2 DISKRITISASI</p>
+</section>
+</section>
+<section id="diskritisasi">
+<h2>DISKRITISASI<a class="headerlink" href="#diskritisasi" title="Permalink to this headline">#</a></h2>
+<p><em>Diskritisasi adalah</em></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#url datasets</span>
@@ -755,16 +834,29 @@ Name: wind, Length: 1461, dtype: float64
 </div>
 </div>
 </div>
-<p>##1. Equal-width
-Equal width adalah <br></p>
-<p>##2. Equal frekuensi interval
-Equal frekuensi interval adalah <br>
-Rumus Equal frekuensi interval</p>
-<p>##3. Entropy</p>
-<p>##Rumus Entropy:
-<br>
-$<span class="math notranslate nohighlight">\(Entropy (D_{1}) = -\sum_{i=1}^{m} Pi \log_{2} Pi\)</span>$</p>
 </section>
+<section id="tugas-2">
+<h2>TUGAS 2<a class="headerlink" href="#tugas-2" title="Permalink to this headline">#</a></h2>
+<section id="equal-width">
+<h3>1. Equal-width<a class="headerlink" href="#equal-width" title="Permalink to this headline">#</a></h3>
+<p><em>Equal-width adalah</em></p>
+<ul class="simple">
+<li><p>Rumus Equal-width :</p></li>
+</ul>
+</section>
+<section id="equal-frekuensi-interval">
+<h3>2. Equal frekuensi interval<a class="headerlink" href="#equal-frekuensi-interval" title="Permalink to this headline">#</a></h3>
+<p><em>Equal frekuensi interval adalah</em></p>
+<ul class="simple">
+<li><p>Rumus Equal frekuensi interval :</p></li>
+</ul>
+<p>##3. Entropy</p>
+<p><em>Entropy adalah</em></p>
+<ul class="simple">
+<li><p>Rumus Entropy:</p></li>
+</ul>
+<br>
+$$Entropy (D_{1}) = -\sum_{i=1}^{m} Pi \log_{2} Pi$$</section>
 </section>
 </section>
 

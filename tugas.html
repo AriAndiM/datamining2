@@ -50,6 +50,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
@@ -115,9 +117,11 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   <strong>
+   <b>
     PENAMBANGAN DATA
-   </strong>
+    <b>
+    </b>
+   </b>
   </a>
  </li>
 </ul>
@@ -316,7 +320,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>PENAMBANGAN DATA</h1>
+                <h1><b>PENAMBANGAN DATA<b></h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -328,10 +332,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="penambangan-data">
-<h1><strong>PENAMBANGAN DATA</strong><a class="headerlink" href="#penambangan-data" title="Permalink to this headline">#</a></h1>
-<p>#TUGAS 1 STATISTIK DISKRIPTIF</p>
-<p>##1. Membaca data cuaca seattle dari url</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="b-penambangan-data-b">
+<h1><b>PENAMBANGAN DATA<b><a class="headerlink" href="#b-penambangan-data-b" title="Permalink to this headline">#</a></h1>
+<h3>TUGAS 1 STATISTIK DESKRIPTIF<p>##1. Membaca data cuaca seattle dari url</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -344,7 +347,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-3f75d164-f222-4f47-be4e-c01b92ea2ef5">
+  <div id="df-9ed02378-0183-4ed7-8eca-664cff7c199c">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -476,7 +479,7 @@ title="Print to PDF"
 </table>
 <p>1461 rows × 6 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-3f75d164-f222-4f47-be4e-c01b92ea2ef5')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-9ed02378-0183-4ed7-8eca-664cff7c199c')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -527,12 +530,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-3f75d164-f222-4f47-be4e-c01b92ea2ef5 button.colab-df-convert');
+          document.querySelector('#df-9ed02378-0183-4ed7-8eca-664cff7c199c button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-3f75d164-f222-4f47-be4e-c01b92ea2ef5');
+          const element = document.querySelector('#df-9ed02378-0183-4ed7-8eca-664cff7c199c');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -676,7 +679,10 @@ Equal width adalah <br></p>
 <p>##2. Equal frekuensi interval
 Equal frekuensi interval adalah <br>
 Rumus Equal frekuensi interval</p>
-<p>##3. Entropi</p>
+<p>##3. Entropy</p>
+<p>##Rumus Entropy:
+<br>
+$<span class="math notranslate nohighlight">\(Entropy (D_{1}) = -\sum_{i=1}^{m} Pi \log_{2} Pi\)</span>$</p>
 </section>
 
     <script type="text/x-thebe-config">

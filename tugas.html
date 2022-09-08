@@ -306,12 +306,48 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#statistik-deskriptif">
+   STATISTIK DESKRIPTIF
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tugas-1">
+   TUGAS 1
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#membaca-data-cuaca-seattle-dari-url">
+     1. Membaca data cuaca seattle dari url
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -323,6 +359,31 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#statistik-deskriptif">
+   STATISTIK DESKRIPTIF
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tugas-1">
+   TUGAS 1
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#membaca-data-cuaca-seattle-dari-url">
+     1. Membaca data cuaca seattle dari url
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -332,8 +393,15 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="penambangan-data">
 <h1><strong>PENAMBANGAN DATA</strong><a class="headerlink" href="#penambangan-data" title="Permalink to this headline">#</a></h1>
-<p>TUGAS 1 STATISTIK DESKRIPTIF</p>
-<H2>1. Membaca data cuaca seattle dari url <h2><div class="cell docutils container">
+<section id="statistik-deskriptif">
+<h2>STATISTIK DESKRIPTIF<a class="headerlink" href="#statistik-deskriptif" title="Permalink to this headline">#</a></h2>
+<p><em>Statik deskriptif adalah metode yang berkaitan dengan pengumpulan / penyajian data hingga memberi informasi yang berguna.</em></p>
+</section>
+<section id="tugas-1">
+<h2>TUGAS 1<a class="headerlink" href="#tugas-1" title="Permalink to this headline">#</a></h2>
+<section id="membaca-data-cuaca-seattle-dari-url">
+<h3>1. Membaca data cuaca seattle dari url<a class="headerlink" href="#membaca-data-cuaca-seattle-dari-url" title="Permalink to this headline">#</a></h3>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
@@ -345,7 +413,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-9bb8c61f-ffcd-45b4-b4fd-411aca361812">
+  <div id="df-29c582e7-587e-43b5-828d-cc6aa12a7355">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -477,7 +545,7 @@ title="Print to PDF"
 </table>
 <p>1461 rows × 6 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-9bb8c61f-ffcd-45b4-b4fd-411aca361812')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-29c582e7-587e-43b5-828d-cc6aa12a7355')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -528,12 +596,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-9bb8c61f-ffcd-45b4-b4fd-411aca361812 button.colab-df-convert');
+          document.querySelector('#df-29c582e7-587e-43b5-828d-cc6aa12a7355 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-9bb8c61f-ffcd-45b4-b4fd-411aca361812');
+          const element = document.querySelector('#df-29c582e7-587e-43b5-828d-cc6aa12a7355');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -579,7 +647,7 @@ Name: wind, Length: 1461, dtype: float64
 </div>
 </div>
 </div>
-<p>##2. Mencari rata-rata,nilai tengah,dan nilai paling sering muncul</p>
+<p>##2. Mencari mean,median,dan modus</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">statistics</span> <span class="k">as</span> <span class="nn">st</span>
@@ -588,6 +656,7 @@ Name: wind, Length: 1461, dtype: float64
 </div>
 </div>
 <p>2.1 Mean (nilai rata-rata)</p>
+<p><em>Mean yaitu nilai rata-rata dari data</em></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">st</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">angin</span><span class="p">)</span>
@@ -601,6 +670,7 @@ Name: wind, Length: 1461, dtype: float64
 </div>
 </div>
 <p>2.2 Median (nilai tengah)</p>
+<p><em>Median yaitu nilai tengah dari data</em></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">st</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">angin</span><span class="p">)</span>
@@ -614,6 +684,7 @@ Name: wind, Length: 1461, dtype: float64
 </div>
 </div>
 <p>2.3 Modus (Nilai paling sering muncul)</p>
+<p><em>Modus yaitu nilai yang paling sering muncul pada data</em></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">st</span><span class="o">.</span><span class="n">mode</span><span class="p">(</span><span class="n">angin</span><span class="p">)</span>
@@ -681,6 +752,8 @@ Rumus Equal frekuensi interval</p>
 <p>##Rumus Entropy:
 <br>
 $<span class="math notranslate nohighlight">\(Entropy (D_{1}) = -\sum_{i=1}^{m} Pi \log_{2} Pi\)</span>$</p>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">

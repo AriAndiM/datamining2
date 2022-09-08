@@ -375,6 +375,11 @@ title="Print to PDF"
      2. Equal frekuensi interval
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#entropy">
+     3. Entropy
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -443,6 +448,11 @@ title="Print to PDF"
      2. Equal frekuensi interval
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#entropy">
+     3. Entropy
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -479,7 +489,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-735541bb-2b3b-4533-888d-ec3e45f16054">
+  <div id="df-17b9539e-eac1-455d-af01-778305f3d515">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -611,7 +621,7 @@ title="Print to PDF"
 </table>
 <p>1461 rows × 6 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-735541bb-2b3b-4533-888d-ec3e45f16054')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-17b9539e-eac1-455d-af01-778305f3d515')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -662,12 +672,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-735541bb-2b3b-4533-888d-ec3e45f16054 button.colab-df-convert');
+          document.querySelector('#df-17b9539e-eac1-455d-af01-778305f3d515 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-735541bb-2b3b-4533-888d-ec3e45f16054');
+          const element = document.querySelector('#df-17b9539e-eac1-455d-af01-778305f3d515');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -810,7 +820,7 @@ Name: wind, Length: 1461, dtype: float64
 <section id="kemiringan-skewned">
 <h3>3. Kemiringan / Skewned<a class="headerlink" href="#kemiringan-skewned" title="Permalink to this headline">#</a></h3>
 <blockquote>
-<div><p><em>Kemencengan atau kecondongan (skewness) adalah tingkat ketidaksimetrisan atau kejauhan simetri dari sebuah distribusi. Skewness diartikan sebagai kemiringan distribusi data. Sebuah distribusi yang tidak simetris akan memiliki rata-rata, median, dan modus yang tidak sama besarnya sehingga distribusi akan terkonsentrasi pada salah satu sisi dan kurvanya akan menceng. Ukuran kemiringan kurva adalah derajat atau ukuran dari ketidaksimetrian suatu distribusi data. Nilai skewness (ukuran kemiringan) menunjukkan data normal ketika nilai-nilai tersebut berada di antara rentang nilai -2 sampai dengan 2. Kurva positif apabila rata-rata hitung &gt; modus/median. Kurva negative apabila rata-rata hitung &lt; modus/media. Jika distribusi memiliki ekor yang lebih panjang ke kanan daripada yang ke kiri maka distribusi disebut menceng ke kanan atau memiliki kemencengan positif. Sebaliknya, jika distribusi memiliki ekor yang lebih panjang ke kiri daripada yang ke kanan maka distribusi disebut menceng ke kiri atau memiliki kemencengan negatif. Berikut ini gambar kurva dari distribusi yang menceng ke kanan (menceng positif) dan menceng ke kiri (menceng negatif) (Ghozali, 2016).</em></p>
+<div><p><em>Kemencengan atau kecondongan (skewness) adalah tingkat ketidaksimetrisan atau kejauhan simetri dari sebuah distribusi. Skewness diartikan sebagai kemiringan distribusi data. Sebuah distribusi yang tidak simetris akan memiliki rata-rata, median, dan modus yang tidak sama besarnya sehingga distribusi akan terkonsentrasi pada salah satu sisi dan kurvanya akan menceng.</em></p>
 </div></blockquote>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -887,7 +897,9 @@ Name: wind, Length: 1461, dtype: float64
 <li><p>Rumus Equal frekuensi interval :</p></li>
 </ul>
 </div></blockquote>
-<p>##3. Entropy</p>
+</section>
+<section id="entropy">
+<h3>3. Entropy<a class="headerlink" href="#entropy" title="Permalink to this headline">#</a></h3>
 <blockquote>
 <div><p><em>Entropy adalah</em></p>
 </div></blockquote>
@@ -896,8 +908,9 @@ Name: wind, Length: 1461, dtype: float64
 <li><p>Rumus Entropy:</p></li>
 </ul>
 </div></blockquote>
-<br>
-$$Entropy (D_{1}) = -\sum_{i=1}^{m} Pi \log_{2} Pi$$</section>
+<div class="math notranslate nohighlight">
+\[Entropy (D_{1}) = -\sum_{i=1}^{m} Pi \log_{2} Pi\]</div>
+</section>
 </section>
 </section>
 

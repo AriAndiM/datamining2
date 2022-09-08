@@ -479,7 +479,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-a81887b0-b7c7-42be-85fb-13ccc8027695">
+  <div id="df-4b71d90a-6efa-4dc2-bcc7-75e5de8fa54b">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -611,7 +611,7 @@ title="Print to PDF"
 </table>
 <p>1461 rows × 6 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-a81887b0-b7c7-42be-85fb-13ccc8027695')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-4b71d90a-6efa-4dc2-bcc7-75e5de8fa54b')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -662,12 +662,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-a81887b0-b7c7-42be-85fb-13ccc8027695 button.colab-df-convert');
+          document.querySelector('#df-4b71d90a-6efa-4dc2-bcc7-75e5de8fa54b button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-a81887b0-b7c7-42be-85fb-13ccc8027695');
+          const element = document.querySelector('#df-4b71d90a-6efa-4dc2-bcc7-75e5de8fa54b');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -760,13 +760,9 @@ Name: wind, Length: 1461, dtype: float64
 </pre></div>
 </div>
 </div></blockquote>
-<p>$<span class="math notranslate nohighlight">\(M_{e}=\frac{X(n+1)}{2}\)</span>$ <br></p>
-<blockquote>
-<div><ul class="simple">
-<li><p>jika jumlah data genap : <br>
-<span class="math notranslate nohighlight">\(M_{e}=\frac{X_{\frac{n}{2}}+X(_{\frac{n}{2}+1})}{2}\)</span></p></li>
-</ul>
-</div></blockquote>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}M_{e}=\frac{X(n+1)}{2}$$ &lt;br&gt;\\&gt;    *   jika jumlah data genap : &lt;br&gt;
+$$M_{e}=\frac{X_{\frac{n}{2}}+X(_{\frac{n}{2}+1})}{2}\end{aligned}\end{align} \]</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">st</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">angin</span><span class="p">)</span>

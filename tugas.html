@@ -489,7 +489,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-c15d6dc0-ba08-481b-91b2-464df617c619">
+  <div id="df-619d2e80-31c3-478e-b507-27bf6ab7c55f">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -621,7 +621,7 @@ title="Print to PDF"
 </table>
 <p>1461 rows × 6 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-c15d6dc0-ba08-481b-91b2-464df617c619')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-619d2e80-31c3-478e-b507-27bf6ab7c55f')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -672,12 +672,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-c15d6dc0-ba08-481b-91b2-464df617c619 button.colab-df-convert');
+          document.querySelector('#df-619d2e80-31c3-478e-b507-27bf6ab7c55f button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-c15d6dc0-ba08-481b-91b2-464df617c619');
+          const element = document.querySelector('#df-619d2e80-31c3-478e-b507-27bf6ab7c55f');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -760,12 +760,13 @@ Name: wind, Length: 1461, dtype: float64
 </div></blockquote>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">st</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">angin</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mean</span><span class="o">=</span><span class="n">st</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">angin</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Mean = &#39;</span><span class="p">,</span><span class="n">mean</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.24113620807666
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Mean =  3.24113620807666
 </pre></div>
 </div>
 </div>
@@ -790,12 +791,13 @@ Name: wind, Length: 1461, dtype: float64
 </div></blockquote>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">st</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">angin</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">median</span><span class="o">=</span><span class="n">st</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">angin</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Median = &#39;</span><span class="p">,</span><span class="n">median</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.0
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Median =  3.0
 </pre></div>
 </div>
 </div>
@@ -806,12 +808,82 @@ Name: wind, Length: 1461, dtype: float64
 </div></blockquote>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">st</span><span class="o">.</span><span class="n">mode</span><span class="p">(</span><span class="n">angin</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">modus</span><span class="o">=</span><span class="n">st</span><span class="o">.</span><span class="n">mode</span><span class="p">(</span><span class="n">angin</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Modus = &#39;</span><span class="p">,</span><span class="n">modus</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2.6
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Modus =  2.6
+</pre></div>
+</div>
+</div>
+</div>
+<p>2.4 Varian</p>
+<blockquote>
+<div><p><em>Varian adalah rata-rata hitung penyimpangan kuadrat setiap data terhadap rata-rata hitungnya.</em></p>
+</div></blockquote>
+<blockquote>
+<div><p>Rumus varian :</p>
+</div></blockquote>
+<div class="math notranslate nohighlight">
+\[s^{2}=\frac{n\sum_{i=1}^{n}x_{i}^{2}-(\sum_{i=1}^{2}x_{1})^{2}}{n(n-1)}\]</div>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(s^{2}\)</span> = varian</p>
+</div></blockquote>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(x_{i}\)</span> = nilai x ke-i</p>
+</div></blockquote>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(n\)</span> = ukuran sampel</p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">varian</span><span class="o">=</span><span class="n">angin</span><span class="o">.</span><span class="n">var</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Varian = &#39;</span><span class="p">,</span><span class="n">varian</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Varian =  2.0673408999278027
+</pre></div>
+</div>
+</div>
+</div>
+<p>2.5 Kuartil</p>
+<blockquote>
+<div><p><em>Kuartil adalah nilai-nilai yang membagi data yang telah diurutkan kedalam 4 bagian yang sama besar. Kuartil dinotasikan dengan notasi <span class="math notranslate nohighlight">\(Q\)</span>. Kuartil terdiri dari 3, yaitu kuartil pertama (<span class="math notranslate nohighlight">\(Q_{1}\)</span>), kuartil kedua (<span class="math notranslate nohighlight">\(Q_{2}\)</span>), dan kuartil ketiga (<span class="math notranslate nohighlight">\(Q_{3}\)</span>).</em></p>
+</div></blockquote>
+<blockquote>
+<div><p>Rumus kuartil :</p>
+</div></blockquote>
+<blockquote>
+<div><p>Untuk banyaknya data <span class="math notranslate nohighlight">\((n)\)</span> ganjil dan <span class="math notranslate nohighlight">\(n+1\)</span> habis dibagi 4.</p>
+</div></blockquote>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[Q_{1}=x_{(\frac{n+1}{4})}\]</div>
+</div></blockquote>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[Q_{2}=x_{(\frac{2(n+1)}{4})}\]</div>
+</div></blockquote>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[Q_{3}=x_{(\frac{3(n+1)}{4})}\]</div>
+</div></blockquote>
+<blockquote>
+<div><p>Untuk banyaknya data <span class="math notranslate nohighlight">\((n)\)</span> ganjil dan <span class="math notranslate nohighlight">\(n+1\)</span> tidak habis dibagi 4.</p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">kuartil</span><span class="o">=</span><span class="n">angin</span><span class="o">.</span><span class="n">quantile</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Kuartil = &#39;</span><span class="p">,</span><span class="n">kuartil</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Kuartil =  3.0
 </pre></div>
 </div>
 </div>
@@ -855,7 +927,7 @@ Name: wind, Length: 1461, dtype: float64
   warnings.warn(msg, FutureWarning)
 </pre></div>
 </div>
-<img alt="_images/tugas_16_1.png" src="_images/tugas_16_1.png" />
+<img alt="_images/tugas_20_1.png" src="_images/tugas_20_1.png" />
 </div>
 </div>
 </section>

@@ -489,7 +489,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-6d2e8a09-d437-4e7c-9c78-a2c18b251a16">
+  <div id="df-3c50a725-5cf2-45b5-88ec-4381a8b6881e">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -621,7 +621,7 @@ title="Print to PDF"
 </table>
 <p>1461 rows × 6 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-6d2e8a09-d437-4e7c-9c78-a2c18b251a16')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-3c50a725-5cf2-45b5-88ec-4381a8b6881e')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -672,12 +672,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-6d2e8a09-d437-4e7c-9c78-a2c18b251a16 button.colab-df-convert');
+          document.querySelector('#df-3c50a725-5cf2-45b5-88ec-4381a8b6881e button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-6d2e8a09-d437-4e7c-9c78-a2c18b251a16');
+          const element = document.querySelector('#df-3c50a725-5cf2-45b5-88ec-4381a8b6881e');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -855,7 +855,7 @@ Name: wind, Length: 1461, dtype: float64
 <div><p><em>Kuartil adalah nilai-nilai yang membagi data yang telah diurutkan kedalam 4 bagian yang sama besar. Kuartil dinotasikan dengan notasi <span class="math notranslate nohighlight">\(Q\)</span>. Kuartil terdiri dari 3, yaitu kuartil pertama (<span class="math notranslate nohighlight">\(Q_{1}\)</span>), kuartil kedua (<span class="math notranslate nohighlight">\(Q_{2}\)</span>), dan kuartil ketiga (<span class="math notranslate nohighlight">\(Q_{3}\)</span>).</em></p>
 </div></blockquote>
 <blockquote>
-<div><p>Rumus kuartil :</p>
+<div><p>Rumus kuartil data tunggal:</p>
 </div></blockquote>
 <blockquote>
 <div><p>Untuk banyaknya data <span class="math notranslate nohighlight">\((n)\)</span> ganjil dan <span class="math notranslate nohighlight">\(n+1\)</span> habis dibagi 4.</p>
@@ -889,6 +889,58 @@ Name: wind, Length: 1461, dtype: float64
 </div></blockquote>
 <blockquote>
 <div><p>Kuartil untuk banyaknya data <span class="math notranslate nohighlight">\((n)\)</span> genap dan habis dibagi 4.</p>
+</div></blockquote>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[Q_{1}=\frac{x(\frac{n}{4})+x(\frac{n}{4}+1)}{2}\]</div>
+</div></blockquote>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[Q_{2}=\frac{x(\frac{n}{2})+x(\frac{n}{2}+1)}{2}\]</div>
+</div></blockquote>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[Q_{3}=\frac{x(\frac{3n}{4})+x(\frac{3n}{4}+1)}{2}\]</div>
+</div></blockquote>
+<blockquote>
+<div><p>Kuartil untuk banyaknya data <span class="math notranslate nohighlight">\((n)\)</span> genap dan tidak habis dibagi 4.</p>
+</div></blockquote>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[Q_{1}=x_{(\frac{n+2}{4})}\]</div>
+</div></blockquote>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[Q_{2}=\frac{x_{(\frac{n}{2})}+x_{(\frac{n}{2}+1)}}{2}\]</div>
+</div></blockquote>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[Q_{3}=x_{(\frac{3n+2}{4})}\]</div>
+</div></blockquote>
+<blockquote>
+<div><p>Rumus kuartil pada data berkelompok</p>
+</div></blockquote>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[Q_{i}=bb_{Qi}+\frac{\frac{i}{4}n-f_{kjs}}{f_{Qi}}.p\]</div>
+</div></blockquote>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(i\)</span> = kuartil ke-i</p>
+</div></blockquote>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(bb_{Qi}\)</span> = batas bawah kelas kuartil ke-i</p>
+</div></blockquote>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(n\)</span> = banyaknya data</p>
+</div></blockquote>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(f_{kjs}\)</span> = frekuensi kumulatif sebelum kelas kuartil ke-i</p>
+</div></blockquote>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(f_{Qi}\)</span> = frekuensi kelas kuartil ke-i</p>
+</div></blockquote>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(p\)</span> = panjang kelas</p>
 </div></blockquote>
 <div class="cell docutils container">
 <div class="cell_input docutils container">

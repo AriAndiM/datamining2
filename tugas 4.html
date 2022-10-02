@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>TUGAS 4-K-Means &#8212; Ari Andi Mustofa 200411100133</title>
+    <title>TUGAS 4-K-Means Clustering &#8212; Ari Andi Mustofa 200411100133</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -137,7 +137,7 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    <strong>
-    TUGAS 4-K-Means
+    TUGAS 4-K-Means Clustering
    </strong>
   </a>
  </li>
@@ -379,7 +379,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>TUGAS 4-K-Means</h1>
+                <h1>TUGAS 4-K-Means Clustering</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -404,8 +404,8 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="tugas-4-k-means">
-<h1><strong>TUGAS 4-K-Means</strong><a class="headerlink" href="#tugas-4-k-means" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="tugas-4-k-means-clustering">
+<h1><strong>TUGAS 4-K-Means Clustering</strong><a class="headerlink" href="#tugas-4-k-means-clustering" title="Permalink to this headline">#</a></h1>
 <section id="k-means">
 <h2>1. K-Means<a class="headerlink" href="#k-means" title="Permalink to this headline">#</a></h2>
 <blockquote>
@@ -446,7 +446,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-80c7d735-0f5b-40ad-8826-7b5d5d856a07">
+  <div id="df-af7826bf-cf3f-49f1-81a1-70b76e78b741">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -517,7 +517,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-80c7d735-0f5b-40ad-8826-7b5d5d856a07')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-af7826bf-cf3f-49f1-81a1-70b76e78b741')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -568,12 +568,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-80c7d735-0f5b-40ad-8826-7b5d5d856a07 button.colab-df-convert');
+          document.querySelector('#df-af7826bf-cf3f-49f1-81a1-70b76e78b741 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-80c7d735-0f5b-40ad-8826-7b5d5d856a07');
+          const element = document.querySelector('#df-af7826bf-cf3f-49f1-81a1-70b76e78b741');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -612,6 +612,33 @@ title="Print to PDF"
 </div>
 </div>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">preprocessing</span>
+<span class="n">le</span> <span class="o">=</span> <span class="n">preprocessing</span><span class="o">.</span><span class="n">LabelEncoder</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y_true</span> <span class="o">=</span> <span class="n">le</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<span class="n">y_true</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+       1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+       1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+       2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+       2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2])
+</pre></div>
+</div>
+</div>
+</div>
 <p>Menjalankan K-Means</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -637,13 +664,84 @@ title="Print to PDF"
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                 precision    recall  f1-score   support
 
-    Iris-setosa       0.00      0.00      0.00        50
-Iris-versicolor       0.00      0.00      0.00        50
- Iris-virginica       0.23      0.28      0.25        50
+    Iris-setosa       1.00      1.00      1.00        50
+Iris-versicolor       0.77      0.96      0.86        50
+ Iris-virginica       0.95      0.72      0.82        50
 
-       accuracy                           0.09       150
-      macro avg       0.08      0.09      0.08       150
-   weighted avg       0.08      0.09      0.08       150
+       accuracy                           0.89       150
+      macro avg       0.91      0.89      0.89       150
+   weighted avg       0.91      0.89      0.89       150
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">labels</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+       1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+       1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 2, 2, 2, 2, 1, 2, 2, 2,
+       2, 2, 2, 1, 1, 2, 2, 2, 2, 1, 2, 1, 2, 1, 2, 2, 1, 1, 2, 2, 2, 2,
+       2, 1, 2, 2, 2, 2, 1, 2, 2, 2, 1, 2, 2, 2, 1, 2, 2, 1], dtype=int32)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">labels</span>
+<span class="n">mapping</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">2</span><span class="p">:</span><span class="mi">2</span><span class="p">}</span>
+<span class="n">a</span><span class="o">=</span> <span class="p">[</span><span class="n">mapping</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">a</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="n">y</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+       1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+       1, 1, 1, 1, 1, 1, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 2, 2, 2, 2, 0, 2, 2, 2,
+       2, 2, 2, 0, 0, 2, 2, 2, 2, 0, 2, 0, 2, 0, 2, 2, 0, 0, 2, 2, 2, 2,
+       2, 0, 2, 2, 2, 2, 0, 2, 2, 2, 0, 2, 2, 2, 0, 2, 2, 0])
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>list
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
+<span class="n">accuracy_score</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">y_true</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.24
 </pre></div>
 </div>
 </div>

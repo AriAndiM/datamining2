@@ -414,12 +414,12 @@ title="Print to PDF"
 </div></blockquote>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">load_iris</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Memuat data set iris</span>
+<span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">load_iris</span>
 </pre></div>
 </div>
 </div>
 </div>
-<p>Membuat Bunch objek dan atributnya</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">iris</span><span class="o">=</span><span class="n">load_iris</span><span class="p">()</span>
@@ -600,12 +600,10 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<ol class="simple">
-<li><p>Periksa fitur-fitur yang terdapat pada datasets.</p></li>
-</ol>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">feature_names</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#memeriksa fitur yang terdapat pada dataset</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">feature_names</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -615,10 +613,10 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<p>Integer merepresentasikan spesies;  0 = Setosa,1 = Versicolor,2 = Virginica</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">target</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Integer merepresentasikan spesies;  0 = Setosa,1 = Versicolor,2 = Virginica</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">target</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -658,10 +656,10 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<p>Menandakan bahwa kita memiliki 150 observasi dan 4 fitur</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#mengecek ada berapa jumlah data dan fitur</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -671,9 +669,7 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<ol class="simple">
-<li><p>Pisahkan data dan Latih Modelnya</p></li>
-</ol>
+<p>Pisahkan data dan Latih Modelnya</p>
 <p>Splitting data ke training dan test set (80:20)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -757,7 +753,7 @@ title="Print to PDF"
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;Testing Accuracy&#39;)
 </pre></div>
 </div>
-<img alt="_images/tugas 3_22_1.png" src="_images/tugas 3_22_1.png" />
+<img alt="_images/tugas 3_18_1.png" src="_images/tugas 3_18_1.png" />
 </div>
 </div>
 <div class="cell docutils container">
